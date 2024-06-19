@@ -173,14 +173,14 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     }
 });
 
-estimation_details_object = {
+let estimation_details_object = {
     configuration_efforts: function(frm) {
         frm.events.calculate_totals(frm);
     },
     other_efforts: function(frm) {
         frm.events.calculate_totals(frm);
     }
-}
+};
 
 const modules = ["accounts_details", "buying_details", "stock_details", "crm_details", "payroll_details", "selling_details", "hrms_details", "projects_details", "manufacturing_details", "setup_details", "healthcare_details", "education_details"];
 
